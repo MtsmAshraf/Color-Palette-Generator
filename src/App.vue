@@ -93,7 +93,7 @@ export default {
   },
   setup(){
     onMounted(()=>{
-      var url = "http://colormind.io/api/:splat 200!";
+      var url = "http://colormind.io/api/:splat200!";
       var data = {
         model : "default",
         input : [[Math.floor(256* Math.random()),Math.floor(256* Math.random()),Math.floor(256* Math.random())],"N","N","N","N"]
@@ -129,7 +129,7 @@ export default {
     },
     getRandomColors(){
       this.changeBodyBg();
-      var url = "http://colormind.io/api/:splat 200!";
+      var url = "http://colormind.io/api/:splat200!";
       var data = {
         model : "default",
         input : [[Math.floor(256* Math.random()),Math.floor(256* Math.random()),Math.floor(256* Math.random())],"N","N","N","N"]
@@ -152,7 +152,7 @@ export default {
     getMatchedColors(){
       this.changeBodyBg();
       if(this.r !== null && this.g !== null && this.b !== null){
-        var url = "http://colormind.io/api/:splat 200!";
+        var url = "http://colormind.io/api/:splat200!";
         var data = {
           model : "default",
           input : [[this.r,this.g,this.b],"N","N","N","N"]
